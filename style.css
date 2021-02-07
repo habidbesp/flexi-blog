@@ -447,3 +447,95 @@ blockquote {
 .button-aside:hover {
   cursor: pointer;
 }
+
+/* smartphones, iPhone, portrait 480x320 phones */
+@media (min-width: 320px) {
+  header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .logo {
+    width: 50%;
+  }
+
+  .logo img {
+    width: 150px;
+  }
+
+  .searchBar {
+    height: 5vh;
+  }
+
+  nav {
+    margin-top: 1.5rem;
+  }
+
+  .box-container {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .box {
+    width: 97%;
+  }
+
+  .box i {
+    font-size: 5rem;
+  }
+
+  .box h3 {
+    font-size: 1.8rem;
+  }
+
+  .contain {
+    height: unset;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .images {
+    width: 100%;
+  }
+
+  .background-image {
+    height: 60vh;
+  }
+
+  .points {
+    width: 20%;
+  }
+
+  .box-container-2 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .box-2 {
+    width: 100%;
+    height: 60vh;
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .image-box img {
+    width: 280px;
+    height: 320px;
+  }
+
+  .text-contain-box {
+    height: 100%;
+  }
+
+  .aside {
+    width: unset;
+  }
+}
+
+/* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
+
+@media (min-width: 481px) {
+}
