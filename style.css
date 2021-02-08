@@ -328,8 +328,8 @@ input:checked + .slider:before {
 
 .image-box img {
   border-radius: 10px;
-  width: 150px;
-  height: 177px;
+  width: 100%;
+  height: auto;
 }
 
 .button-title {
@@ -458,18 +458,29 @@ blockquote {
 
   .logo {
     width: 50%;
+    height: auto;
   }
 
   .logo img {
-    width: 150px;
+    width: 100%;
+    height: auto;
   }
 
   .searchBar {
     height: 5vh;
+    width: 100%;
   }
 
   nav {
+    width: 100%;
     margin-top: 1.5rem;
+  }
+
+  nav ul {
+    width: 100%;
+    font-size: 2rem;
+    display: flex;
+    justify-content: space-between;
   }
 
   .box-container {
@@ -479,7 +490,7 @@ blockquote {
   }
 
   .box {
-    width: 97%;
+    width: 100%;
   }
 
   .box i {
@@ -501,11 +512,25 @@ blockquote {
   }
 
   .background-image {
-    height: 60vh;
+    height: 90vh;
   }
 
   .points {
     width: 20%;
+  }
+
+  .text-titel blockquote {
+    font-size: 2.5rem;
+  }
+
+  .arrow-left,
+  .arrow-right {
+    width: 60px;
+    height: 60px;
+  }
+
+  .arrows {
+    width: 15rem;
   }
 
   .box-container-2 {
@@ -515,15 +540,20 @@ blockquote {
 
   .box-2 {
     width: 100%;
-    height: 60vh;
+    height: 100vh;
     margin-top: 1rem;
     display: flex;
     flex-direction: column;
   }
 
+  .image-box {
+    display: flex;
+    justify-content: center;
+  }
+
   .image-box img {
-    width: 280px;
-    height: 320px;
+    width: 330px;
+    height: auto;
   }
 
   .text-contain-box {
@@ -532,10 +562,198 @@ blockquote {
 
   .aside {
     width: unset;
+    height: 90vh;
+    padding: 0 3rem;
   }
 }
 
 /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
 
 @media (min-width: 481px) {
+  header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .logo {
+    width: 50%;
+    height: auto;
+  }
+
+  .logo img {
+    width: 100%;
+    height: auto;
+  }
+
+  .searchBar {
+    height: 7vh;
+  }
+
+  .label-searchBar {
+    font-size: 2.5rem;
+  }
+
+  input {
+    height: 5vh;
+  }
+
+  input:focus {
+    font-size: 2.5rem;
+  }
+
+  ::placeholder {
+    font-size: 2.5rem;
+  }
+
+  nav {
+    width: 100%;
+  }
+
+  nav ul {
+    width: 100%;
+    font-size: 2.5rem;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .box-container {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .box {
+    width: 100%;
+  }
+
+  .box i {
+    font-size: 5rem;
+  }
+
+  .box h3 {
+    font-size: 1.8rem;
+  }
+
+  .contain {
+    height: unset;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .images {
+    width: 100%;
+  }
+
+  .background-image {
+    height: 90vh;
+  }
+
+  .points {
+    width: 20%;
+  }
+
+  .points ul li {
+    font-size: 2rem;
+    padding-top: 1rem;
+  }
+
+  .text-titel h1 {
+    font-size: 5rem;
+  }
+
+  .text-titel p {
+    font-size: 3rem;
+    line-height: 5rem;
+  }
+
+  .text-titel blockquote {
+    font-size: 2.5rem;
+  }
+
+  .arrows {
+    width: 15rem;
+  }
+
+  .arrow-left,
+  .arrow-right {
+    width: 60px;
+    height: 60px;
+  }
+
+  .box-container-2 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .box-2 {
+    width: 100%;
+    height: 80vh;
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .box-2 h3 {
+    font-size: 2.5rem;
+  }
+
+  .image-box {
+    display: flex;
+    justify-content: center;
+  }
+
+  .botton-box {
+    width: 40%;
+    height: 6vh;
+    font-size: 2rem;
+  }
+  .quote {
+    font-size: 2rem;
+  }
+
+  .image-box img {
+    width: 350px;
+    height: auto;
+  }
+
+  .text-contain-box {
+    height: 100%;
+  }
+
+  .aside {
+    width: unset;
+    height: 90vh;
+  }
+
+  .aside-text {
+    height: 60vh;
+    font-size: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  .aside-text div:nth-of-type(2) h2 {
+    font-size: 4rem;
+  }
+
+  .aside-text p {
+    font-size: 3.5;
+  }
+
+  .aside-text div:nth-of-type(2) p {
+    font-size: 2.5rem;
+    line-height: 4.5rem;
+    padding-top: 2rem;
+  }
+
+  .list-item-aside {
+    padding-top: 2.5rem;
+    line-height: 2.5rem;
+    font-size: 2rem;
+  }
+}
+
+@media (min-width: 1025px) {
 }
